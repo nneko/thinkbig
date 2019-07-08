@@ -1,0 +1,30 @@
+{{! Each post will be output using this markup }}
+{{#foreach posts}}
+
+<article class="{{post_class}}">
+    <header class="post-header">
+        <h2 class="post-title-index"><a href="{{url}}">{{{title}}}</a></h2>
+    </header>
+    <section class="post-excerpt-index">
+        {{#if feature_image}}
+            <p class="post-index-img" style="background: url({{img_url feature_image}});"></p>
+        {{/if}}
+        <p><!-- {{excerpt}} -->{{meta_description}}...
+          <a class="read-more" href="{{url}}">
+            <!--googleoff: all-->Continue reading &raquo;<!--googleon: all-->
+          </a>
+        </p>
+        <span class="post-meta">
+            {{#foreach authors}}
+            <a class="author-url" href="{{url}}">{{name}}</a>
+            {{/foreach}}
+            {{tags prefix="on "}}
+            <!--
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+              {{date format="DD MMMM YYYY"}}
+            </time> -->
+        </span>
+        {{> share-and-like-strip}}
+    </section>
+</article>
+{{/foreach}}

@@ -1,0 +1,40 @@
+<nav id="thinkbig-topnavbar" class="thinkbig-navigation" 	{{#is "index"}} style="
+	    /*background: rgba(40,40,46,.95) !important;*/
+			border: none;
+	    height: 6.5rem !important;
+			top: 0;"{{/is}} >
+	<div class="thinkbig-navigation-container">
+	<ul>
+    {{#if @site.navigation}}
+<!--	Mobile Menu		-->
+		<li id="thinkbig-navmenu">
+			<div id="thinkbig-navmenu-block">
+				<span id="thinkbig-navmenu-label">{{@site.title}}</span>
+				<span id="thinkbig-navmenu-button">+</span>
+			</div>
+		</li>
+        {{#foreach navigation}}
+		<li class="thinkbig-navmenu-item">
+			<a href="{{url}}">
+					{{label}}
+			</a>
+		</li>
+        {{/foreach}}
+<!--	Desktop Menu		-->
+        {{#foreach navigation}}
+        <li class="thinkbig-navmenu-big-item">
+            <a href="{{url absolute="true"}}"
+							{{#if current}}
+								style="color: black; border-bottom: black {{#if @first}}1px{{else}}3px{{/if}} solid; font-size: 2rem;"
+							{{else if @first}}
+								style="color: black; border-bottom: black 1px solid; font-size: 2rem;"
+							{{/if}}
+						>
+							{{label}}
+						</a>
+        </li>
+        {{/foreach}}
+    {{/if}}
+	</ul>
+</div>
+</nav>

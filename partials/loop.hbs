@@ -1,0 +1,142 @@
+{{! Each post will be output using this markup }}
+{{#foreach posts}}
+
+{{#if @last}}
+{{/if}}
+
+<article class="{{post_class}}
+{{#if @first}}
+  " style="border-bottom: none;max-width:100%;width:100%;padding-top:0;"
+{{else}}
+  frontpost
+{{/if}}">
+{{#if @first}}
+  {{#if feature_image}}
+    <div class="featured-post-image-block" style="
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+                      url({{img_url feature_image}});">
+  {{/if}}
+{{else}}
+  {{#if feature_image}}
+      <img src="{{img_url feature_image}}"
+      {{#if @first}}
+      {{else}}
+        class="frontpost-img"
+      {{/if}}/>
+  {{/if}}
+{{/if}}
+  <div class="frontpost-tile" {{#if @first}}
+  style="max-width: 55%;width:55%;margin: 0 auto;"
+  {{/if}}>
+    <header class="post-header"
+    {{#if @first}} style="
+      float: left;
+      display: block;
+      max-width: 80%;"
+    {{/if}}>
+        {{#if @first}}<h1 style="margin-top: 8rem;
+          padding: 0 2rem;
+          opacity: 0.6;margin-bottom: 0;text-align: left;" {{else}}<h2 {{/if}}
+          class={{#if @first}}"post-title-hero post-title post-featured-title"
+        {{else}}"post-title"{{/if}} {{#if @first}}style="margin-top: 8rem;"
+        {{/if}}>
+        {{#if @first}}
+        <style type="text/css">
+          .post-title-hero a {
+            color: white;
+          }
+
+          .post-title-hero a:hover {
+            color: #1590FF;
+          }
+
+          @media only screen and (max-width: 1024px)  {
+            .post-title-hero {
+              font-size: 3rem;
+            }
+          }
+
+          @media only screen and (max-width: 700px)  {
+            .post-title-hero {
+              font-size: 2rem;
+            }
+
+            .post-header {
+              max-width: 100%;
+            }
+          }
+        </style>
+        {{/if}}
+          <a href="{{url}}">{{{title}}}</a>
+  {{#if @first}}
+        </h1>
+        <p>
+          <a class="read-more" href="{{url}}" style="font-weight: bold !important; padding: 0 2rem !important;">
+            <!--googleoff: all-->Continue reading &raquo;<!--googleon: all-->
+          </a>
+        </p>
+        <span class="post-hero-meta post-meta" style="text-align:left !important;padding: 0 2rem;">
+          <style type="text/css">
+            .post-hero-meta a {
+              color: white !important;
+              font-weight: bold !important;
+            }
+
+            .post-hero-meta a:hover {
+              color: #1590FF !important;
+              font-weight: bold;
+            }
+          </style>
+            By {{#foreach authors}} <a class="author-url" href="{{url}}" style="color: white !important;">{{name}}</a>
+            {{/foreach}}
+            {{tags prefix="in "}}
+            <!-- on
+             <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}" style="border: none !important;padding-left: 0;margin-left: 0;">
+              {{date format="DD MMMM YYYY"}}
+            </time> -->
+        </span>
+    </header>
+    </div>
+  </div>
+  {{else}}
+  </h2>
+    <section class="frontpost-excerpt"
+    {{#if @first}} style="display:none;"{{/if}}>
+        <p><!-- {{excerpt}} -->{{meta_description}}...
+          <a class="read-more" href="{{url}}">
+            <!--googleoff: all-->Continue reading &raquo;<!--googleon: all-->
+          </a>
+        </p>
+        <span class="post-meta">
+            {{#foreach authors}}
+            <a class="author-url" href="{{url}}">{{name}}</a>
+            {{/foreach}}
+            {{tags prefix="on "}}
+            <!-- <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+              {{date format="DD MMMM YYYY"}}
+            </time> -->
+        </span>
+    </section>
+  </div>
+    {{/if}}
+</article>
+
+{{#if @first}}
+<div class="home-tiles">
+{{/if}}
+{{#if @last}}
+  </div>
+{{/if}}
+{{/foreach}}
+
+<script src="{{asset "js/masonry.pkgd.min.js"}}"></script>
+<script type="text/javascript">
+// init Masonry
+var $grid = $('.home-tiles  ').masonry({
+  // options...
+  itemSelector: '.frontpost',
+  columnWidth: '.frontpost',
+  gutter: 0.66,
+  percentPostition: true
+});
+</script>

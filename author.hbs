@@ -1,0 +1,54 @@
+{{!< default}}
+    {{navigation}}
+
+    <div class="site-wrapper">
+
+    {{! Everything inside the #author tags pulls data from the author }}
+    {{#author}}
+    <header  class="tag-header author-header post-header main-header author-head {{#if cover_image}}" <!-- style="background-image: url({{cover_image}})-->no-cover{{else}}no-cover{{/if}}">
+        <section class="author-profile">
+            {{#if profile_image}}
+
+            <img class="author-image" src="{{img_url profile_image}}" title="{{name}}'s Picture"/>
+            {{/if}}
+            <h1 class="author-title">{{name}}</h1>
+            <p class="author-bio inner">{{bio}}</p>
+            <div class="author-meta">
+                <a class="back-button icon-arrow-left" href="{{@site.url}}"> Home</a>
+                {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+                {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+                <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+                <a class="subscribe-button icon-feed" href="{{url}}rss/"> {{name}}</a>
+            </div>
+        </section>
+    </header>
+    {{/author}}
+
+    <main class="index-content" role="main">
+    {{! Each post will be output using this markup }}
+    <div class="author-tiles">
+      <div class="post-feed">
+          {{#foreach posts}}
+
+              {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+              {{> "post-card"}}
+
+          {{/foreach}}
+      </div>
+
+    </div>
+    <footer class="post-footer inner">
+    </footer>
+{{pagination}}
+</main>
+</div>
+
+{{#if pagination.pages}}
+  <script>
+      // maxPages is a global variable that is needed to determine
+      // if we need to load more pages for the infinitescroll, or if
+      // we reached the last page already.
+      var maxPages = parseInt('{{pagination.pages}}');
+  </script>
+  <script src="{{asset "js/infinitescroll.js"}}"></script>
+{{/if}}

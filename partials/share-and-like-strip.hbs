@@ -1,0 +1,19 @@
+        <span class="share-post-strip">
+            <div class="plusone">
+              <div class="g-plusone" data-annotation="bubble" data-size="medium" data-href="{{url absolute='true'}}" data-height="20" data-align="right"></div>
+            </div>
+
+            <iframe src="https://www.facebook.com/plugins/like.php?href={{encode (url absolute='true')}}&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=20" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+            <a
+              href="https://twitter.com/intent/tweet?text={{encode (title)}}&amp;url={{encode (url absolute='true')}}&amp;via=bigthinkapplied"
+              title="Twitter Tweet Button"
+              scrolling="no"
+              data-size="default"
+              class="twitter-share-button">
+            </a>
+
+            <div class="inshare">
+              <script type="in/share" data-url="{{url absolute='true'}}" data-counter="right" data-showzero="right" ></script>
+            </div>
+        </span>

@@ -1,0 +1,23 @@
+{{!< default}}
+    {{navigation}}
+
+    <div class="site-wrapper">
+<main class="index-content" role="main">
+  {{> searchbox}}
+  {{> search-results}}
+  <div class="index-tiles">
+    <div class="post-feed">
+        {{#foreach posts}}
+
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card"}}
+
+        {{/foreach}}
+    </div>
+
+  </div>
+
+{{!! After all the posts, we have the previous/next pagination links }}
+{{pagination}}
+</main>
+</div>

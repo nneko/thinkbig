@@ -1,0 +1,27 @@
+
+    <div class="thinkbig-post-nav-subscribe" style="border-top: 1px solid #e2e2e2;">
+        <ul>
+            <li id="signup_to_mail"><h6>Sign up to our mailing list & receive updates in your inbox.</h6></li>
+        </ul>
+    </div>
+    <div class="mailform" style="border-top: none;">
+        <form id="signup-to-mailform" class="mailform-box" method="post" action="/subscribe">
+            <div class="mailbox">
+                <div class="mailform-signup">
+                    <input id="mailform-firstname" class="mail-namebox" type="text" name="FNAME" placeholder=" First Name (Optional)" value=""/>
+                    <input id="mailform-lastname" class="mail-namebox" type="text" name="LNAME" placeholder=" Last Name (Optional)" value=""/>
+                    <input id="mailform-emailaddr" class="mail-emailbox" type="email" name="EMAIL" placeholder=" Email" value=""/>
+                    <input id="mailform-send" type="submit" value="Subscribe"/>
+                </div>
+                <div class="mailform-response">
+                    <h6 id="mailform-error-msg" class="hidden">Uh Oh. <b style="color:red;">Error</b>. Try again.</h6>
+                    <p id="mailform-response-msg" class="hidden"></p>
+                    <h6 id="mailform-success-msg" class="hidden">Thanks for signing up.</h6>
+                </div>
+            </div>
+        </form>
+    </div>
+    <section>
+        <p class="mailform-note">Be a part of the community. We value your time. No spam. No gibberish and jabber. Unsubscribe any time.</p>
+    </section>
+    <script type="text/javascript" async defer src="{{asset "js/mail-signup.js"}}"></script>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{@site.description}}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bing Search validation -->
+    <meta name="msvalidate.01" content="51E9CF80AAAD4A09B51696CC796B805B" />
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:site_name" content="{{@site.title}}"/>
+    <meta property="og:url" content="{{@site.url}}{{url}}" />
+    <meta property="og:title" content="{{meta_title}}" />
+    {{#is "post"}}
+    {{#post}}
+    <meta name="twitter:description" content="{{meta_description}}" />
+    {{/post}}
+    {{else}}
+    <meta property="og:description" content="{{@site.description}}" />
+    {{/is}}
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    {{#is "post"}}
+    {{#post}}
+        {{#if feature_image}}
+    <meta property="og:image" content="{{img_url feature_image absolute='true'}}" />
+        {{else}}
+    <meta property="og:image" content="{{@site.url}}{{@site.logo}}" />
+        {{/if}}
+    {{/post}}
+    {{else}}
+    <meta property="og:image" content="{{@site.url}}{{@site.logo}}" />
+    {{/is}}
+    <!-- Facebook og end -->
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@bigthinkapplied" />
+    <meta name="twitter:title" content="{{meta_title}}" />
+    {{#is "post"}}
+    {{#post}}
+    <meta name="twitter:description" content="{{meta_description}}" />
+        {{#if feature_image}}
+    <meta property="twitter:image:src" content="{{img_url feature_image absolute='true'}}" />
+        {{/if}}
+    {{/post}}
+    {{else}}
+    <meta name="twitter:description" content="{{@site.description}}" />
+    {{/is}}
+    {{! Leaving this out until as there is no equivalent user property. However, single user site can still utilize <meta name="twitter:creator" content="@twitter-user" /> }}
+    <!-- Twitter Card End -->
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/post-feed.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/kg.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "highlighter/styles/thinkbig-github.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/comments.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/readmore.css"}}" />
+
+    {{! Commented out the headers below to allow us to remove the meta generator security risk and customize what information is included }}
+    {{! head}}
+
+    <link rel="alternate" type="application/rss+xml" title="{{@site.title}}" href="/rss/">
+    <link rel="canonical" href="{{@site.url}}{{url}}" />
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+    {{! Load JQuery first since so any scripts and templates depend on it}}
+    <script type="text/javascript" src="{{asset "js/jquery-3.2.1.min.js"}}"></script>
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    {{! The main JavaScript files }}
+    <script type="text/javascript" src="{{asset "js/gallery.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <script async type="text/javascript" src="{{asset "js/menu.js"}}"></script>
+    <script type="text/javascript" src="{{asset "highlighter/highlight.pack.js"}}"></script>
+    <script type="text/javascript" src="{{asset "ghosthunter/jquery.ghostHunter.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "ghosthunter/hunt.js"}}"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <!-- Social Media and Ad Tracking scripts. -->
+    <script src="https://apis.google.com/js/platform.js" async defer>
+        lang: 'en_US'
+        parsetags: 'onload'
+    </script>
+    <script async defer src="https://platform.linkedin.com/in.js" type="text/javascript">
+        lang: en_US
+    </script>
+    <script async defer>
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
+    {{ghost_foot}}
+</body>
+</html>

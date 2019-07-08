@@ -1,0 +1,240 @@
+<div class="slider">
+  <div class="slider-box">
+    <button id="slider-close-button">close X</button>
+      <div class="inlineform-container" >
+        <div class="inlineform">
+          <form id="slider-form" class="slider-formbox" method="post" action="/">
+          <h3 id="slider-label">Keep updated</h3>
+          <input id="slider-emailaddr" class="mail-emailbox" type="email"
+        name="EMAIL" placeholder="Email address" value=""/>
+          <input id="slider-send" type="submit" value="Subscribe"/>
+        </form>
+        </div>
+        <div class="slider-response hidden">
+            <p id="slider-response-msg" class="hidden"></p>
+            <h3 id="slider-success-msg" class="hidden" style="display: none">
+              Thanks for signing up.</h3>
+            <button id="slider-msg-toggle" class="hidden">Try Again</button>
+        </div>
+      </div>
+  </div>
+</div>
+
+<style type="text/css">
+
+  #slider-response-msg, #slider-success-p {
+      display: block;
+      margin: 0;
+      padding: 0;
+      font-size: 1.4rem;
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: normal;
+      text-align: center;
+  }
+
+  #slider-success-msg {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .slider-response h6 {
+      color: black;
+      margin: 0;
+      font-size: 1.4rem;
+  }
+
+  .slider-box {
+    margin: 0;
+    /*padding-top: 6.5rem;*/
+  }
+
+  .slider-form {
+      overflow: hidden;
+      margin: 0;
+      clear: none;
+  }
+
+  .inlineform-container {
+    margin: 0 auto;
+    display: table;
+  }
+
+  #slider-label {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: black;
+    margin: 0 1rem;
+    display: inline;
+    clear: none;
+  }
+
+  .inlineform {
+    margin: 0 auto;
+    overflow: hidden;
+    display: inline-block;
+    /* float: right; */
+    margin-top: 2rem;
+  }
+
+ #slider-emailaddr {
+    border-radius: 0;
+    padding: 0;
+    margin: 0 !important;
+    height: 43px;
+    border: none;
+    font-family: "Helvetica Neue",sans-serif;
+    font-size: 1.4rem;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    line-height: 4rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    word-break: initial;
+    text-align: center;
+ }
+
+  #slider-send {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    height: 43px;
+    cursor: pointer;
+    width: 130px;
+    overflow: hidden;
+    background-color: #333;
+    /*background-color: #168dd9;*/
+    color: #fff;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0 !important;
+    font-family: "Helvetica Neue",sans-serif;
+    font-size: 1.4rem;
+    -webkit-font-smoothing: antialiased;
+    line-height: 4rem;
+  }
+
+  #slider-send:hover {
+    background-color: #676767;
+  }
+
+  .slider-container {
+    background: transparent;
+    border: none;
+    height: 10rem;
+    padding: 0;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 2;
+    margin: 0;
+    margin-top: 6.5rem;
+  }
+
+  .slider {
+    background: #efefef; /*#edece4;*/
+    border: none;
+    overflow-y: hidden;
+  	/* Fluid height based on the parent's height!! */
+    /*
+    height: 100%;
+  	-webkit-transition: -webkit-transform .3s ease;
+    -moz-transition: -moz-transform .3s ease;
+    -ms-transition: -ms-transform .3s ease;
+    transition: transform .3s ease;
+    */
+    margin-top: 0;
+    max-height: 13rem;
+    padding-top: 0;
+    height: 10rem;
+    transition-property: all;
+    transition-delay: 0.5s;
+	  transition-duration: 1s;
+	  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);;
+    /*
+    transition-property: all;
+	  transition-duration: .5s;
+	  transition-timing-function: ease-out; *//*cubic-bezier(0, 1, 0.5, 1);*/
+  }
+
+  .slider.opened {
+    /* visible */
+    /*
+    -webkit-transform: translate(0, 0%);
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    */ /*cubic-bezier(0, 1, 0.5, 1);*/
+  }
+
+  .slider.closed {
+    /* completely offscreen */
+    /*
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    */
+    max-height: 0;
+  }
+
+  #slider-close-button, #slider-msg-toggle {
+    background: #efefef;/*#edece4;*/
+    border: none;
+    border-radius: 0;
+    border-bottom-left-radius: 4px;
+    color: #black;
+    float: right;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+  }
+
+  #slider-close-button:hover, #slider-msg-toggle:hover {
+    color: #333;
+    background: #f2f2f2;
+  }
+
+  #slider-close-button:focus, #slider-msg-toggle:focus {
+    color: #333;
+    background: #f2f2f2;
+  }
+  #slider-msg-toggle {
+    font-weight: normal;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    height: 43px;
+    cursor: pointer;
+    width: 130px;
+    overflow: hidden;
+    background-color: #168dd9;
+    color: #fff;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0 !important;
+    font-family: "Helvetica Neue",sans-serif;
+    font-size: 1.4rem;
+    -webkit-font-smoothing: antialiased;
+    line-height: 4rem;
+    position: relative;
+
+  }
+
+  @media only screen and (max-width: 390px) {
+
+    #slider-send {
+      width: auto;
+    }
+
+  }
+</style>
+
+<script type="text/javascript" async src="{{asset "js/slider.js"}}"></script>

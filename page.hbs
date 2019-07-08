@@ -1,0 +1,25 @@
+{{!< default}}
+    {{navigation}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+<main class="content" role="main">
+
+    <article class="post-page {{post_class}}">
+
+        {{#post}}
+
+    <header class="blog-hero-header post-header">
+
+            <h1 class="post-title">{{{title}}}</h1>
+    </header>
+
+    <section class="post-content">
+      {{#if feature_image}}
+          <img class="post-featured-hero" src="{{img_url feature_image}}"/>
+      {{/if}}
+      {{content}}
+    </section>
+        {{/post}}
+    </article>
+</main>

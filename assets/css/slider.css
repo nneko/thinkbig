@@ -1,0 +1,49 @@
+.slider-container {
+  border: none;
+  height: 6rem;
+  margin-top: 6.5rem;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.slider {
+  /*border-top: 1px solid #fafafa;*/
+  border: none;
+  overflow-y: hidden;
+	/* Fluid height based on the parent's height!! */
+  height:100%;
+	-webkit-transition: -webkit-transform .3s ease;
+  -moz-transition: -moz-transform .3s ease;
+  -ms-transition: -ms-transform .3s ease;
+  transition: transform .3s ease;
+  margin-top: 6.5rem;
+}
+
+.slider.opened {
+  /* visible */
+  -webkit-transform: translate(0, 0%);
+  -moz-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+}
+
+.slider.closed {
+  /* completely offscreen */
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+}
+
+#slider-close-button {
+  background: #168dd9;
+  border: 1px solid #168dd9;
+  color: white;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 0.5rem;
+}
+
+#slider-emailaddr {
+  text-align: center;
+}

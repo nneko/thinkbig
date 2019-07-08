@@ -1,0 +1,36 @@
+{{!< default}}
+{{navigation}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The big featured header on the homepage, with the site logo and description }}
+<div class="site-wrapper">
+<header class="site-head" {{#if @site.cover_image}}style="background: cover !important;background-image: url({{@site.cover_image}});height: 30%"{{/if}}>
+</header>
+
+{{! The main content area on the homepage }}
+<main class="home-content" role="main">
+
+  <div class="home-tiles">
+    <div class="post-feed">
+        {{#foreach posts}}
+
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card"}}
+
+        {{/foreach}}
+    </div>
+  </div>
+</main>
+</div>
+
+{{#if pagination.pages}}
+  <script>
+      // maxPages is a global variable that is needed to determine
+      // if we need to load more pages for the infinitescroll, or if
+      // we reached the last page already.
+      var maxPages = parseInt('{{pagination.pages}}');
+  </script>
+  <script src="{{asset "js/infinitescroll.js"}}"></script>
+{{/if}}
