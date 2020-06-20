@@ -4,6 +4,18 @@ thinkbig theme for ghost blog engine [Ghost](http://github.com/tryghost/ghost/).
 
 ## Changelog
 
+###v6.4.7
+	* Navigation menu styling for current items and first item
+
+###v6.4.4
+  * ghosthunter results template updates
+
+###v6.4
+  * Removed disqus comments.
+  * Removed next and previous links for inside post articles. Next/Previous navigation related to read-next aside only.
+  * Removed social media js
+
+
 ###v6.3.9
   * Removal of email signup slider on homepage
   * Replaced deprecated @blog with @site property

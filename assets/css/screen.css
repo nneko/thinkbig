@@ -2409,7 +2409,11 @@ clear: both;
 }
 
 #thinkbig-search-results a:hover {
-  background-color: #ddd;
+  background-color: #be4E3b;
+}
+
+#thinkbig-search-results h2:hover, #thinkbig-search-results h4:hover, #thinkbig-search-results p:hover {
+  color: white;
 }
 
 #thinkbig-search-matches {

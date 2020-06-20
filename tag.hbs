@@ -3,7 +3,7 @@
 
     <div class="site-wrapper">
 {{#tag}}
-    <header class="post-header tag-header  {{#if feature_image}}" <!-- style="background: cover !important;background-image: url({{img_url feature_image}})-->no-cover{{else}}no-cover{{/if}}">
+    <header class="post-header tag-header  {{#if feature_image}}" no-cover{{else}}no-cover{{/if}}">
     <section class="tag-archive-header">
         <h1>{{name}}</h1>
         <p class="inner">{{description}}</p>
@@ -13,46 +13,15 @@
     {{/tag}}
 
 <main class="index-content" role="main">
-
-    {{! Each post will be output using this markup }}
-
     <div class="tag-tiles">
       <div class="post-feed">
           {{#foreach posts}}
-
-              {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
               {{> "post-card"}}
 
           {{/foreach}}
       </div>
 
     </div>
-    <!--
-    {{#foreach posts}}
-    <article class="{{post_class}} tag-page-post">
-        <header class="post-header">
-            <h2 class="post-title-index"><a href="{{url}}">{{{title}}}</a></h2>
-        </header>
-        <section class="post-excerpt-index">
-            {{#if feature_image}}
-                <p class="post-index-img" style="background: url({{img_url feature_image}});"></p>
-            {{/if}}
-            <p>
-              {{meta_description}}...
-              <a class="read-more" href="{{url}}">Continue reading &raquo;</a>
-            </p>
-            <span class="post-meta">
-                {{#foreach authors}}
-                <a class="author-url" href="{{url}}">{{name}}</a>
-                {{/foreach}}
-                {{tags prefix="on "}}
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-            </span>
-            {{> share-and-like-strip}}
-        </section>
-    </article>
-    {{/foreach}}
-  -->
 {{pagination}}
 
 </main>

@@ -1,13 +1,13 @@
 {
     "name": "thinkbig",
-    "version": "6.3.9",
+    "version": "6.4.8",
     "engines": {
         "ghost": ">=2.0.0"
     },
     "author": {
         "name": "Nneko Branche",
-        "email": "nneko@nbranche.org",
-        "url": "https://nbranche.org"
+        "email": "nneko@branche.online",
+        "url": "https://nneko.branche.online"
     },
     "description": "Big Thinkers Theme",
     "config": {

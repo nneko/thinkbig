@@ -42,7 +42,7 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@bigthinkapplied" />
+    <meta name="twitter:site" content="@nbranche" />
     <meta name="twitter:title" content="{{meta_title}}" />
     {{#is "post"}}
     {{#post}}
@@ -86,35 +86,8 @@
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
     <script async type="text/javascript" src="{{asset "js/menu.js"}}"></script>
     <script type="text/javascript" src="{{asset "highlighter/highlight.pack.js"}}"></script>
-    <script type="text/javascript" src="{{asset "ghosthunter/jquery.ghostHunter.min.js"}}"></script>
-    <script type="text/javascript" src="{{asset "ghosthunter/hunt.js"}}"></script>
+    <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
     <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
-    <!-- Social Media and Ad Tracking scripts. -->
-    <script src="https://apis.google.com/js/platform.js" async defer>
-        lang: 'en_US'
-        parsetags: 'onload'
-    </script>
-    <script async defer src="https://platform.linkedin.com/in.js" type="text/javascript">
-        lang: en_US
-    </script>
-    <script async defer>
-      window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-          t = window.twttr || {};
-        if (d.getElementById(id)) return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-
-        t._e = [];
-        t.ready = function(f) {
-          t._e.push(f);
-        };
-
-        return t;
-      }(document, "script", "twitter-wjs"));
-    </script>
     {{ghost_foot}}
 </body>
 </html>
