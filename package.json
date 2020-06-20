@@ -9,7 +9,7 @@
         "email": "nneko@branche.online",
         "url": "https://nneko.branche.online"
     },
-    "description": "Big Thinkers Theme",
+    "description": "Big Thinkers Theme for Ghost",
     "config": {
         "posts_per_page": 10
     },
