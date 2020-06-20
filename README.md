@@ -1,6 +1,6 @@
 # thinkbig
 
-The thinkbig theme for ghost blog engine [Ghost](http://github.com/tryghost/ghost/).
+Big Thinkers Theme for [Ghost](http://github.com/tryghost/ghost/) blog engine.
 
 ## Copyright & License
 
