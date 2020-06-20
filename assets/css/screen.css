@@ -771,7 +771,7 @@ margin on the iframe, cause it breaks stuff. */
     /*color: #fd6512;*/
     color: black;
     font-weight: normal;
-    border-bottom: black 3px solid;
+    border-bottom: black 1px solid;
 }
 
 .grayscale {
@@ -2372,7 +2372,7 @@ clear: both;
 
 #thinkbig-search-results {
     border: none;
-    width: auto;;
+    width: 72%;
     padding: 1em;
     margin: 0 auto;
     max-width: 100%;
@@ -2380,12 +2380,14 @@ clear: both;
 }
 
 #thinkbig-search-results h2 {
+    color: black;
     font-size: 2.5rem;
 }
 
 #thinkbig-search-results h2:hover {
     /*color:#57A3E8;*/
-    color: black;
+    /*color: black;*/
+    color: #0076e2;
     font-size: 2.5rem;
 }
 
@@ -2397,16 +2399,17 @@ clear: both;
 
 #thinkbig-search-results a {
     display: block;
+    /*background-color: #f2f2f2;*/
+    background-color: #ddd;
+    color: #999;
     padding: 1rem 2.61792rem;
     margin-bottom: 0.61805rem;
-    background-color: #f2f2f2;
     border-radius: 0.61805rem;
     text-decoration: none;
 }
 
 #thinkbig-search-results a:hover {
   background-color: #ddd;
-  color: #999;
 }
 
 #thinkbig-search-matches {
