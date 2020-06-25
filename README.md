@@ -10,7 +10,7 @@ Big Thinkers Theme for [Ghost](http://github.com/tryghost/ghost/) blog engine.
 
 ![Post Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Post.png)
 
-![Post Read Previous and Next Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Read_Prev_and_Read-Next.png)
+![Post Read Previous and Next Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Read%20Prev%20and%20Read-Next.png)
 
 ![Author Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Author.png)
 
