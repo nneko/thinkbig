@@ -2,6 +2,20 @@
 
 Big Thinkers Theme for [Ghost](http://github.com/tryghost/ghost/) blog engine.
 
+![Home Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Home.png)
+
+![Index Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Index.png)
+
+![Index Search Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Search.png)
+
+![Post Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Post.png)
+
+![Post Read Previous and Next Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Read_Prev_and_Read-Next.png)
+
+![Author Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Author.png)
+
+![Page Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Page.png)
+
 ## Copyright & License
 
 Copyright (c) Nneko Branche - Released under the MIT License.
