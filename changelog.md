@@ -4,6 +4,9 @@ thinkbig theme for ghost blog engine [Ghost](http://github.com/tryghost/ghost/).
 
 ## Changelog
 
+###v6.5
+	* Added styling for figcaption elements
+
 ###v6.4.7
 	* Navigation menu styling for current items and first item
 

@@ -488,6 +488,12 @@ iframe > body {
     margin: 0;
 }
 
+figcaption {
+    color: #bbb;
+    font-size: 1rem;
+    text-align: center;
+}
+
 /* When a video is inside the fitvids wrapper, drop the
 margin on the iframe, cause it breaks stuff. */
 .fluid-width-video-wrapper iframe {
