@@ -2,6 +2,8 @@
 
 Big Thinkers Theme for [Ghost](http://github.com/tryghost/ghost/) blog engine.
 
+## Screenshots
+
 ![Home Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Home.png)
 
 ![Index Screenshot](https://raw.githubusercontent.com/nneko/thinkbig/master/assets/theme/screenshots/Index.png)
