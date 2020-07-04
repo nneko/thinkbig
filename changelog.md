@@ -4,6 +4,9 @@ thinkbig theme for ghost blog engine [Ghost](http://github.com/tryghost/ghost/).
 
 ## Changelog
 
+###v6.5.1
+	* Default text color now #1a2a30. Post card titles no longer bold
+
 ###v6.5
 	* Added styling for figcaption elements
 
