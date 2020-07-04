@@ -82,6 +82,8 @@
     margin-top: 0;
     color: black;
     font-family: "Segoe UI Light","Segoe","Segoe UI","OpenSans", 'Arial', sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
 }
 
 .post-card-title:hover {
