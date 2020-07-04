@@ -266,7 +266,7 @@ h4, h5, h6 {
     line-height: 1;
     margin-top: 0;
     font-family: "OpenSans", 'Arial', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 h1 {
@@ -1182,7 +1182,8 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .post-title {
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: normal;
     margin:0;
     margin-top: 2rem;
     margin-bottom: 2rem;
