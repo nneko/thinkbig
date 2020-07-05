@@ -28,7 +28,7 @@
     background-size: cover;
     border-bottom: none;
     border-radius: 0;
-    box-shadow: rgba(210, 215, 219, 0.08) 8px 14px 38px, rgba(39, 44, 49, 0.05) 1px 3px 8px;
+    /*box-shadow: rgba(210, 215, 219, 0.08) 8px 14px 38px, rgba(39, 44, 49, 0.05) 1px 3px 8px;*/
     transition: all 0.5s ease;
     padding: 0;
 }

@@ -1098,7 +1098,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .home-content, .index-content {
-    background: #f4f4f4;
+    background: #fafafa;
     margin: 0;
     display: block;
     overflow: hidden;
@@ -1160,7 +1160,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .tag-tiles, .author-tiles {
-  background-color: #f4f4f4;
+  background-color: #fafafa;
 }
 
 .author-header {

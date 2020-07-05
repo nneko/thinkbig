@@ -4,6 +4,9 @@ thinkbig theme for ghost blog engine [Ghost](http://github.com/tryghost/ghost/).
 
 ## Changelog
 
+###v6.5.4
+	* home, tag and author feed background now lighter. Removed box shadows from post-card tiles until hover.
+
 ###v6.5.2
 	* Font styling updates for post-titles and headers
 
