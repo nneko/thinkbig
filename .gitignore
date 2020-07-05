@@ -1,5 +1,7 @@
 package-lock.json
 node_modules/
 assets/ghosthunter/node_modules/
+assets/ghosthunter/src/
+assets/ghosthunter/dist/
 .DS_Store
 .vscode
