@@ -4,6 +4,9 @@ thinkbig theme for ghost blog engine [Ghost](http://github.com/tryghost/ghost/).
 
 ## Changelog
 
+###v6.6.6
+	* styling for page navigation items.
+
 ###v6.5.5
 	* Removed background from home and index feeds. Highlights for read time on each post
 

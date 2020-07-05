@@ -859,6 +859,12 @@ margin on the iframe, cause it breaks stuff. */
     text-decoration: none;
 }
 
+.archive-item a {
+    color: black; 
+    border-bottom: black 1px solid; 
+    font-size: 2rem;
+}
+
 .thinkbig-post-nav-top {
     display: table;
     position: relative;
