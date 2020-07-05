@@ -39,6 +39,10 @@
     transform: translate3D(0, -1px, 0) scale(1.02);
 }
 
+.post-card:first-child {
+    box-shadow: rgba(210, 215, 219, 0.08) 8px 14px 38px, rgba(39, 44, 49, 0.05) 1px 3px 8px;
+}
+
 .post-card-image-link {
     position: relative;
     display: block;
@@ -229,13 +233,16 @@
 }
 
 .reading-time {
-    flex-shrink: 0;
-    margin-left: 20px;
+    background: #f1f1f2;
+    border-radius: 8px;
     color: var(--midgrey);
+    flex-shrink: 0;
     font-size: 1.2rem;
     line-height: 33px;
     font-weight: 500;
     letter-spacing: 0.5px;
+    margin-left: 20px;
+    padding: 0 1rem;
     text-transform: uppercase;
 }
 
