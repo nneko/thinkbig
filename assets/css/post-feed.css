@@ -113,6 +113,10 @@
     justify-content: space-between;
 }
 
+.post-card-content:hover {
+    background-color: #eee;
+}
+
 .post-card-excerpt {
     font-family: Georgia, serif;
 }
