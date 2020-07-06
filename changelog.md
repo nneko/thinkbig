@@ -4,6 +4,9 @@ thinkbig theme for ghost blog engine [Ghost](http://github.com/tryghost/ghost/).
 
 ## Changelog
 
+###v7.0
+	* Non post pages now extend to 95% of view
+
 ###v6.5.7
 	* Scale first item in feed.
 

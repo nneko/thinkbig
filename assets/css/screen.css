@@ -751,7 +751,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .thinkbig-navigation ul {
     margin: 0;
-    margin-left: 12.5%;
+    margin-left: 2.5%;
     padding: 0;
     display: table;
 }
@@ -1163,7 +1163,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .home-tiles, .index-tiles, .tag-tiles, .author-tiles {
-  width: 75%;
+  width: 95%;
   margin: 0 auto;
   float: none;
   overflow: hidden;
