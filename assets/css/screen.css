@@ -1233,10 +1233,10 @@ margin on the iframe, cause it breaks stuff. */
     float: none;
     /*max-width: 100%;*/
     margin: 0 auto;
-    margin-left: -62.5%; /* -((width-100%)/2) */
+    margin-left: -54.16%; /* -((width-100%)/2) */
     /*padding: 3px;*/
     padding: 0;
-    width: 225%; /*2^1/4 x width */
+    width: 208.4%; /*2^1/4 x width */
 }
 
 .post-featured-hero {
@@ -1245,11 +1245,11 @@ margin on the iframe, cause it breaks stuff. */
     float: none !important;
     /*max-width: 100%;*/
     margin: 0 auto !important;
-    margin-left: -62.5% !important; /* -((width-100%)/2) */
+    margin-left: -54.16% !important; /* -((width-100%)/2) */
     /*padding: 3px;*/
     padding: 0 !important;
-    width: 225% !important; /*2^1/4 x width */
-    max-width: 225% !important;
+    width: 208.4% !important; /*2^1/4 x width */
+    max-width: 208.4% !important;
 }
 
 .post-excerpt-index img {
@@ -1448,8 +1448,8 @@ margin on the iframe, cause it breaks stuff. */
     display: block;
     border-top: 1px solid #e2e2e2;
     padding: 2rem 0;
-    width: 225%;
-    margin: 1rem -62.5%;
+    width: 208.4%;
+    margin: 1rem -54.16%;
 }
 
 .mailform-box {
