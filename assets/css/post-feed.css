@@ -42,16 +42,16 @@
 
 .post-card:first-child {/*
     box-shadow: rgba(210, 215, 219, 0.08) 8px 14px 38px, rgba(39, 44, 49, 0.05) 1px 6px 12px;*/
-    box-shadow: 0 35px 80px -20px rgba(0,0,10,.05),0 4px 60px -4px rgba(0,0,0,.15);
+    box-shadow: 0 35px 80px -20px rgba(0,0,10,.05),0 45px 60px -45px rgba(0,0,0,.15);
     transition: all 0.4s ease;
-    transform: translate3D(0, -1px, 0) scale(1.02);
+    /*transform: translate3D(0, -1px, 0) scale(1.02);*/
 }
 
 .post-card:first-child:hover {
     /*box-shadow: rgba(210, 215, 219, 0.08) 8px 14px 38px, rgba(39, 44, 49, 0.05) 1px 6px 12px;*/
-    box-shadow: 0 35px 80px -20px rgba(0,0,10,.05),0 4px 60px -4px rgba(0,0,0,.15);
+    box-shadow: 0 35px 80px -20px rgba(0,0,10,.05),0 45px 60px -45px rgba(0,0,0,.15);
     transition: all 0.4s ease;
-    transform: translate3D(0, -1px, 0) scale(1.04);
+    /*transform: translate3D(0, -1px, 0) scale(1.04);*/
 }
 /*
 .post-card:first-child .post-card-image-link {
