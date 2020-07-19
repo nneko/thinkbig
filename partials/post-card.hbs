@@ -12,9 +12,11 @@
                 {{/if}}
                 <h2 class="post-card-title">{{title}}</h2>
             </header>
+            {{#if @first}}
             <section class="post-card-excerpt">
                 <p>{{excerpt words="33"}}</p>
             </section>
+            {{/if}}
         </a>
         <footer class="post-card-meta">
 
