@@ -1,8 +1,4 @@
-<nav id="thinkbig-topnavbar" class="thinkbig-navigation" 	{{#is "index"}} style="
-	    /*background: rgba(40,40,46,.95) !important;*/
-			border: none;
-	    height: 6.5rem !important;
-			top: 0;"{{/is}} >
+<nav id="thinkbig-topnavbar" class="thinkbig-navigation">
 	<div class="thinkbig-navigation-container">
 	<ul>
     {{#if @site.navigation}}
@@ -25,7 +21,7 @@
         <li class="thinkbig-navmenu-big-item">
             <a href="{{url absolute="true"}}"
 							{{#if current}}
-								style="color: black; border-bottom: black 1px solid; font-size: 2rem;"
+								class="thinkbig-navigation-activeitem"
 							{{/if}}
 						>
 							{{label}}

@@ -768,11 +768,12 @@ margin on the iframe, cause it breaks stuff. */
 
 .thinkbig-navigation a {
     color: #979898;/*#C6C8CA;*//*#777;*/
-    text-align: center;
-    text-decoration: none;
-    margin: 0.5rem 2rem;
     font-weight: normal;
     font-size: 1.5rem;
+    margin: 0.5rem 2rem;
+    padding-bottom: 0.3rem;
+    text-align: center;
+    text-decoration: none;
 }
 
 .thinkbig-navigation a:hover {
@@ -780,6 +781,12 @@ margin on the iframe, cause it breaks stuff. */
     color: black;
     font-weight: normal;
     border-bottom: black 1px solid;
+}
+
+.thinkbig-navigation-activeitem {
+    color: black; 
+    border-bottom: black 2px solid; 
+    font-size: 2rem;
 }
 
 .grayscale {
