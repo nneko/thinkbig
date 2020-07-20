@@ -784,9 +784,9 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .thinkbig-navigation-activeitem {
-    color: black; 
+    color: black !important; 
     border-bottom: black 2px solid; 
-    font-size: 2rem;
+    font-size: 2rem !important;
 }
 
 .grayscale {
