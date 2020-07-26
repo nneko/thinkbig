@@ -104,12 +104,12 @@
     font-size: 3rem;
     font-weight: normal;
 }
-
+/*
 .post-card-title:hover {
-  /* color: #1167a8; */
-  font-weight: bold;
+  color: #1167a8;
+  font-weight: normal;
 }
-
+*/
 .post-card-content {
     flex-grow: 1;
     display: flex;
