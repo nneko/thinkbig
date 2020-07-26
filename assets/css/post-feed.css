@@ -82,7 +82,7 @@
 }
 
 .post-card-content-link:hover {
-  color: #1167a8;
+    color: black; /* #1167a8;*/
     text-decoration: none;
 }
 
@@ -106,7 +106,8 @@
 }
 
 .post-card-title:hover {
-  color: #1167a8;
+  /* color: #1167a8; */
+  font-weight: bold;
 }
 
 .post-card-content {
