@@ -38,6 +38,7 @@
 }
 
 .post-card:hover {
+    animation: none;
     /*box-shadow: rgba(210, 215, 219, 0.08) 8px 28px 50px, rgba(39, 44, 49, 0.04) 1px 6px 12px;*/
     box-shadow: 0 35px 80px -20px rgba(0,0,10,.05),0 30px 60px -30px rgba(0,0,0,.15);
     transition: all 0.4s ease;
