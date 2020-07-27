@@ -17,6 +17,10 @@
 }
 
 .post-card {
+    animation-name: anim-fade-up;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
     flex: 1 1 300px;
     display: flex;
     flex-direction: column;

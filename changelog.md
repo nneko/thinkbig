@@ -4,6 +4,9 @@ thinkbig theme for ghost blog engine [Ghost](http://github.com/tryghost/ghost/).
 
 ## Changelog
 
+###v7.0.9
+	* Added fade/slide up animation for post-cards
+
 ###v7.0.2
 	* Changes to post-card borders
 
