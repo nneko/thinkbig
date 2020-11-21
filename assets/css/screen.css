@@ -1240,10 +1240,10 @@ margin on the iframe, cause it breaks stuff. */
     float: none;
     /*max-width: 100%;*/
     margin: 0 auto;
-    margin-left: -54.16%; /* -((width-100%)/2) */
+    margin-left: -33.3%; /* -((width-100%)/2) */
     /*padding: 3px;*/
     padding: 0;
-    width: 208.4%; /*2^1/4 x width */
+    width: 166.6%; /* 2^1/4 x width */
 }
 
 .post-featured-hero {
@@ -1252,11 +1252,11 @@ margin on the iframe, cause it breaks stuff. */
     float: none !important;
     /*max-width: 100%;*/
     margin: 0 auto !important;
-    margin-left: -54.16% !important; /* -((width-100%)/2) */
+    margin-left: -33.3% !important; /* -((width-100%)/2) */
     /*padding: 3px;*/
     padding: 0 !important;
-    width: 208.4% !important; /*2^1/4 x width */
-    max-width: 208.4% !important;
+    width: 166.6% !important; /*2^1/4 x width */
+    max-width: 166.6% !important;
 }
 
 .post-excerpt-index img {
@@ -1316,7 +1316,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .post-page {
-  max-width: 48%;
+  max-width: 60%;
 }
 
 .read-more {

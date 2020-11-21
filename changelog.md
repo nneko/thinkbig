@@ -4,6 +4,9 @@ thinkbig theme for ghost blog engine [Ghost](http://github.com/tryghost/ghost/).
 
 ## Changelog
 
+###v7.0.10
+	* Article width max-width 60%
+
 ###v7.0.9
 	* Added fade/slide up animation for post-cards
 
