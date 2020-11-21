@@ -1455,8 +1455,8 @@ margin on the iframe, cause it breaks stuff. */
     display: block;
     border-top: 1px solid #e2e2e2;
     padding: 2rem 0;
-    width: 208.4%;
-    margin: 1rem -54.16%;
+    width: 166.6%;
+    margin: 1rem -33.3%;
 }
 
 .mailform-box {
