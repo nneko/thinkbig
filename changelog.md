@@ -4,6 +4,11 @@ thinkbig theme for ghost blog engine [Ghost](http://github.com/tryghost/ghost/).
 
 ## Changelog
 
+###v8.0.0
+Updates to make compatible with Ghost v4.0
+	* replaced {{code}} in error.hbs with {{statusCode}}
+	* Added .kg-bookmark-* css classes to support Koenig editor
+
 ###v7.0.10
 	* Article width max-width 60%
 

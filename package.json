@@ -1,6 +1,6 @@
 {
     "name": "thinkbig",
-    "version": "7.11",
+    "version": "8.0.0",
     "engines": {
         "ghost": ">=2.0.0"
     },
