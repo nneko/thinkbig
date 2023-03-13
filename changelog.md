@@ -4,6 +4,9 @@ thinkbig theme for ghost blog engine [Ghost](http://github.com/tryghost/ghost/).
 
 ## Changelog
 
+###v8.4.0
+Removal of custom subscription handling.
+
 ###v8.1.0
 Deprecation of mailchimp subscription form. Support for native ghost data member
 form
