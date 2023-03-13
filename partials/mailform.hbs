@@ -24,8 +24,15 @@
 {{#if @member}}
 <a href="javascript:" data-members-signout>Sign out</a>
 {{else}}
-<form data-members-form="subscribe">
-    <input data-members-email type="email" required="true" />
-    <button type="submit">Subscribe</button>
-</form>
+<div class="mailform">
+    <form data-members-form="subscribe">
+        <div class="mailbox">
+            <input id="mailform-emailaddr" data-members-email type="email" required="true" />
+            <button type="submit" id="mailform-send">Subscribe</button>
+        </div>
+    </form>
+</div>
+<section>
+    <p class="mailform-note">We value your time. You easily can unsubscribe at any time.</p>
+</section>
 {{/if}}
