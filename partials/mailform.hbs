@@ -1,3 +1,4 @@
+<!--
 <div class="mailform">
     <form id="signup-to-mailform" class="mailform-box" method="post" action="/subscribe">
         <div class="mailbox">
@@ -19,3 +20,12 @@
     <p class="mailform-note">We value your time. You easily can unsubscribe at any time.</p>
 </section>
 <script type="text/javascript" async defer src="{{asset "js/mail-signup.js"}}"></script>
+-->
+{{#if @member}}
+<a href="javascript:" data-members-signout>Sign out</a>
+{{else}}
+<form data-members-form="subscribe">
+    <input data-members-email type="email" required="true" />
+    <button type="submit">Subscribe</button>
+</form>
+{{/if}}
